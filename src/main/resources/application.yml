@@ -9,21 +9,10 @@ logging:
     org.springframework.security.oauth2: INFO
 #    org.springframework.boot.autoconfigure: DEBUG
 
-spring:
-  security:
-    oauth2:
-      client:
-        registration:
-          my-server:
-            provider: my-provider
-            client-id: tutorialspoint
-            client-secret: my-secret-key
-            authorization-grant-type: client_credentials
-            scope: message.read,message.write
-        provider:
-          my-provider:
-            authorization-uri: http://localhost:8081/oauth/authorize
-            token-uri: http://localhost:8081/oauth/token
-
-messages:
-  base-uri: http://localhost:8081
+security:
+  oauth2:
+    client:
+      grantType: client_credentials
+      clientId: tutorialspoint
+      clientSecret: my-secret-key
+      accessTokenUri: http://localhost:8081/oauth/token
