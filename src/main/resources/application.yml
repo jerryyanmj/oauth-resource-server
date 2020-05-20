@@ -9,6 +9,10 @@ logging:
     org.springframework.security.oauth2: INFO
 #    org.springframework.boot.autoconfigure: DEBUG
 
+
+example:
+  baseUrl: http://localhost:8081
+
 security:
   oauth2:
     client:
