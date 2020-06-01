@@ -20,3 +20,7 @@ security:
       clientId: tutorialspoint
       clientSecret: my-secret-key
       accessTokenUri: http://localhost:8081/oauth/token
+
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration

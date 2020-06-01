@@ -15,16 +15,16 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
  *
  */
 
-@EnableWebSecurity
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
-
-    @Bean
-    public UserDetailsService users() {
-        UserDetails user = User.withDefaultPasswordEncoder()
-                .username("user")
-                .password("pass")
-                .roles("USER")
-                .build();
-        return  new InMemoryUserDetailsManager(user);
-    }
-}
+//@EnableWebSecurity
+//public class SecurityConfig extends WebSecurityConfigurerAdapter {
+//
+//    @Bean
+//    public UserDetailsService users() {
+//        UserDetails user = User.withDefaultPasswordEncoder()
+//                .username("user")
+//                .password("pass")
+//                .roles("USER")
+//                .build();
+//        return  new InMemoryUserDetailsManager(user);
+//    }
+//}
